@@ -11,7 +11,7 @@ public class interfaces {
 
 }
 class developer{
-	public void dev(computer d) {
+	public void dev(computer d) {//we need to use computer for flexibility
 		d.coding();
 	}
 }
