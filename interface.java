@@ -3,7 +3,9 @@ public class interfaces {
 
 	public static void main(String[] args) {
 	developer chakri=new developer();
-	computer l=new laptop();
+	computer l=new laptop(); //dynamic method dispatch
+	//Parent p = new child();
+	//Child child = new Parent();
 	computer d=new desktop();
 	chakri.dev(l);
 
