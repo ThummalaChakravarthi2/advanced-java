@@ -17,6 +17,7 @@ public class LamdaExpessionWithReturnTypeUsingAnonymousInnerClass {
 	}
 
 }*/
+@FunctionalInterface
 interface Aa{
 	int add(int a,int b);
 }
@@ -24,7 +25,7 @@ interface Aa{
 public class LamdaExpessionWithReturnTypeUsingAnonymousInnerClass {
 
 	public static void main(String[] args) {
-		Aa obj=(a,b) -> a+b;
+		Aa obj=(a,b) -> a+b;//Lambda works only with interfaces that have one method, otherwise Java gets confused
 			
 		int sum=obj.add(2,2);
 		System.out.println(sum);
