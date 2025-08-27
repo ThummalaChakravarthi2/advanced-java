@@ -1,0 +1,29 @@
+package collections;
+
+import java.util.HashSet;
+import java.util.Iterator;
+import java.util.Set;
+import java.util.TreeSet;
+
+public class Sets{
+
+	public static void main(String[] args) {
+		
+		Set<Integer> nums=new TreeSet<>();
+		nums.add(21);
+		nums.add(4);
+		nums.add(16);
+		nums.add(8);
+		nums.add(41);
+		nums.add(62); 
+		// values.hasNext() Checks if there is another element after the current pointer.Returns true if yes, false if no
+		// values.next() Moves the pointer to the next element. Returns that element so you can use/print it.
+		
+		Iterator<Integer> values=nums.iterator();
+		while(values.hasNext()) {
+			System.out.println(values.next());
+		}
+
+	}
+
+}
