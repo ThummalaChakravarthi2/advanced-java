@@ -16,7 +16,7 @@ class UPI implements Payment {
 
 class Cash implements Payment {
     public void pay(int amount) {
-        System.out.println("Paid " + amount + " using Cash.");
+        System.out.println("Paid" + amount + " using Cash.");
     }
 }
 class PaymentService {
